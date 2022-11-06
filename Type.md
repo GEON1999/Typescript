@@ -1,30 +1,30 @@
 # Type
 
-### \***\*String\*\***
+### String
 
 ```tsx
 let str: string = "hi";
 ```
 
-### \***\*Number\*\***
+### Number
 
 ```tsx
 let num: number = 10;
 ```
 
-### \***\*Boolean\*\***
+### Boolean
 
 ```tsx
 let isLoggedIn: boolean = false;
 ```
 
-### \***\*Array\*\***
+### Array
 
 ```tsx
 let arr: number[] = [1, 2, 3];
 ```
 
-### \***\*Tuple\*\***
+### Tuple
 
 ```tsx
 let arr: [string, number] = ["hi", 10];
@@ -32,7 +32,7 @@ let arr: [string, number] = ["hi", 10];
 
 - 튜플은 배열의 길이가 고정되고 각 요소의 타입이 지정되어 있는 배열 형식을 의미함
 
-### \***\*Any\*\***
+### Any
 
 ```tsx
 let str: any = "hi";
@@ -43,7 +43,7 @@ let arr: any = ["a", 2, true];
 - 타입스크립트를 점진적으로 적용할 때 활용 가능
 - 단어 의미 그대로 모든 타입을 허용
 
-### \***\*Void\*\***
+### Void
 
 ```tsx
 let unuseful: void = undefined;
@@ -54,7 +54,7 @@ function notuse(): void {
 
 - 반환 값을 설정할 수 없는 타입
 
-### \***\*Never\*\***
+### Never
 
 ```tsx
 function neverEnd(): never {
@@ -75,3 +75,11 @@ if (typeof a === `number`) {
 ```
 
 - 매개변수의 값을 미리알 수 없을 때 사용할 수 있음
+
+### Enum
+- 특정 값(상수)들의 집합을 의미합니다.
+```
+enum Avengers { Capt = 2, IronMan, Thor }
+let hero: Avengers = Avengers[2]; // Capt
+let hero: Avengers = Avengers[4]; // Thor
+```
